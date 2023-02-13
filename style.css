@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Bebas+Neue&family=Bitter&family=Copse&family=Cutive&family=Lora:wght@700&family=Oswald:wght@200;300;400;600&family=Playfair+Display:wght@400;500;600;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez&family=Scope+One&family=Slabo+27px&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'poppins',sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    position: relative;
+    width: 78%;
+    height: 88%;
+    background: #fff;
+    box-shadow: 0px 0px 50px -1px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s linear;
+}
+header nav{
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .left_menu{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    flex-direction: column;
+}
+header .left_menu a{
+    margin: 30px 0px;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: #000;
+    transition: 0.1s linear;
+    transform: rotate(-90deg);    
+}
+header .left_menu a:hover{
+    color: #dc1313;
+
+}
+header section{
+    position: absolute;
+    margin: 80px 15px;    
+    width: 93%;
+    height: 84%;
+    /* border: 1px solid greenyellow;}  */
+}
+header section .content{
+    position: relative;
+    left: 280px;
+    transition: 1s linear;
+}
+header section .content h1{
+    font-size: 40px;
+    transition: 1s linear;
+}
+header section .content p{
+    font-size: 10px;
+    font-weight: 600;
+    width: 290px;
+    word-break: break-all;
+}
+header section .content .price_order{
+    display: flex;
+    align-items: center;
+    margin-top: 10px; 
+}
+header section .content .price_order .price h2{
+    font-size: 20px;
+    color: #dc1313;
+    line-height: 18px;
+}
+header section .content .price_order .price p{
+    font-size: 5.5PX;
+    width: 50px;
+    /* border: 1px solid #000; */
+}
+header section .content .price_order a{
+    text-decoration: none;
+    padding: 4px 15px;
+    background: #121213;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 35px;
+}
+header section .cards{
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid #000; */
+    /* margin: 10rem auto; */
+    position: relative;
+    top: 11%;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    justify-content: space-between; 
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: 1s linear;
+}
+header section .cards .card{
+    position: relative;
+    min-width: 115px;
+    min-height: 135px;
+    padding: 0px 10px;
+    /* border: 1px solid #000; */
+    margin-left: 13px;
+    background: #282828;
+    border-radius: 35px 10px;
+}
+header section .cards::-webkit-scrollbar{
+    display: none;
+}
+header section .cards .card:nth-last-child(1){
+    margin-right: 0px;
+}
+header section .cards .card .dis{
+    width: 70px;
+    position: relative;
+    top: -5px;
+    left: -10px;
+}
+header section .cards .card .steam{
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    top: -35px;
+    left: -5px;
+}
+header section .cards .card h4{
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+header section .cards .card h5{
+    color: #fff;
+    font-size: 12px;
+    font-family: 500;
+    margin-top: -8px;
+    display: block;
+    /* overflow: hidden; */
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}
+header section .cards .card p{
+    color: rgb(203, 203, 203);
+    font-size: 9px;
+    font-weight: 500;    
+}
+header section .cards .card .rate_cart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+header section .cards.card .rate_cart h6{
+    font-size: 10px;
+}
+header section .cards.card .rate_cart .fas{
+    font-size: 12px;
+}
+header .logo{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 200px;
+    height: 250px;
+    transition: 2s;
+    background: #282828;
+}
+header .logo h1{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;    
+}
+header .logo img{
+    width: 200px;
+    margin: 17px 0px 0px;
+    filter: drop-shadow(0px 0px 20px rgba(0,0,0,.6));
+}
+header nav .menu{
+    font-size: 20px;
+    color: #000;
+}
+header nav .right_menu{
+    display: flex;
+    align-items: center;
+}
+header nav .right_menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+header nav .right_menu ul li{
+    padding: 3px 5px;
+    margin-right: 10px;
+} 
+header nav .right_menu ul li a{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 400;
+    margin-right: 2px;
+    color: #000;
+    transition: 1s linear ;
+}
+
+header nav .right_menu ul li a::before{
+    content: '';
+    position: absolute;
+    background: #dc1313;
+    top: 40px;
+    width: 0;
+    height: 2px;
+    transition: 1s linear;
+}
+
+header nav .right_menu ul li a:hover::before{
+    color: blue;
+    width: 45px;
+}
+header nav .right_menu .user_cart{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;    
+}
+header nav .right_menu .user_cart .user {
+    position: relative; 
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+header nav .right_menu .user_cart .user::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #dc1313;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+header nav .right_menu .user_cart .user img{
+    width: 100%;
+    right: 40px;
+}
+header section .social{
+    position: relative;
+    width: 100%;
+    /* border: 1px solid #000; */
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s linear;
+}
+header section .social .btns{
+    margin-left: 30px;
+}
+
+header section .social .btns .fas{
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+header section .social .btns .fa:hover{
+    color: rgba(0, 0, 0,.5);
+}
+header section .social .icons{
+    display: flex;
+    align-items: center;
+}
+header section .social .icons a{
+    position: relative;
+    font-size: 12px;
+    margin-right: 20px;
+    color: #282828;
+    transition: .3s linear;
+
+}
+header section .social .icons a:hover{
+    color: #000;
+}
+@media (max-width:700px) {
+    header section .social{
+        position: absolute;
+        width: 100%;
+        top: 22rem;
+        /* border: 1px solid #000; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+        
+    header .logo img{
+        width: 200px;
+        margin: 20px 0px 0px;
+        filter: drop-shadow(0px 0px 20px rgba(0,0,0,.6));
+    }
+    
+header{
+    position: relative;
+    width: 105%;
+    height: 95%;
+    background: #fff;
+    box-shadow: 0px 0px 50px -1px rgba(0, 0, 0, .5);
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 150px;
+    height: 250px;
+    transition: 2s;
+    background: #282828;
+}
+header .logo img{
+    width: 150px;
+    margin: 20px 0px 0px;
+    filter: drop-shadow(0px 0px 20px rgba(0,0,0,.6));
+}
+header nav .right_menu ul li{
+    padding: 0px 8px;
+} 
+header section .content{
+    position: absolute;
+    left: 200px;
+}
+header section .content .price_order{
+    display: block;
+}
+header section .content .price_order a{    
+    padding: 4px 15px;
+    background: #121213;
+    color: #fff;
+    text-decoration: none;
+}
+header section .content .price_order .price p{
+    font-size: 5.5PX;
+    width: 50px;
+    height: 20px;
+    /* border: 1px solid #000; */
+}
+
+header section .cards{
+    width: 78%;
+    height: 170px;
+    /* border: 1px solid #000; */
+    margin: 9rem 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    overflow: auto;
+}
+header section .cards .card{
+    position: relative;
+    width: 80px;
+    height: 100px;
+    /* border: 1px solid #000; */
+}
+}
